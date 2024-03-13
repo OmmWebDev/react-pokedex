@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  background-color: white;
+}
+
+#home-pokemon-wrapper{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+body::-webkit-scrollbar{
+  width: 12px;
+}
+body::-webkit-scrollbar-track{
+  background: white;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #48d0b0;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+#search-results::-webkit-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: none;
+}
+
+.grass{
+  background-color: #48d0b0;
+}
+.fire{
+  background-color: #fb6c6c;
+}
+.water{
+  background-color: #76bdfc;
+}
+.ghost{
+  background-color: #7b62a3;
+}
+.bug{
+  background-color: #a8b820;
+}
+.normal{
+  background-color: #a8a878;
+}
+.poison{
+  background-color: #a040a0;
+}
+.electric{
+  background-color: #fcb300;
+}
+.ground{
+  background-color: #e0c068;
+}
+.fairy{
+  background-color: #ee99ac;
+}
+.fighting{
+  background-color: #c03028;
+}
+.psychic{
+  background-color: #f85888;
+}
+.rock{
+  background-color: #b8a038;
+}
+.ice{
+  background-color: #98d8d8;
+}
+.dragon{
+  background-color: #7038f8;
+}
+.steel{
+  background-color: #b8b8d0;
+}
+.flying{
+  background-color: #a890f0;
+}
+.dark{
+  background-color: #705848;
+}
+
+
+
+/* --------------------------- Small Devices --------------------------- */
+@media only screen and (max-width: 530px) {
+  #pokemon-details-top{
+    flex-direction: column;
+  }
+  #pokemon-details-id{
+    right: 50px;
+  }
+  #pokemon-details-img{
+    height: 160px;
+    width: 160px;
+    margin: 20px 0 0 0;
+  }
+}
